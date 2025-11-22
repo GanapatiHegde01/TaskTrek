@@ -1,0 +1,33 @@
+.container{
+  display: grid;
+  grid-template-rows:150px auto;
+}
+
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+}
+
+.app_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 8%;
+}
+
+@media screen and (max-width: 480px) {
+.main{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 4rem;
+}
+
+.app_header{
+  flex-wrap: wrap;
+  
+}
+  
+}

@@ -1,0 +1,27 @@
+
+.task_creation_bns{
+    display: flex;
+    gap:20px;
+}
+
+
+
+.task_input{
+    width: 32rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.progess{
+     padding: 0.5em;
+    margin:.5rem;
+}
+.add_task_btn{
+    padding:.5rem;
+    background-color: lightblue;
+    border:none;
+    border-radius: 10px;
+    border:1px solid rgb(61, 59, 59);
+}
