@@ -1,16 +1,71 @@
-# React + Vite
+# TaskTrek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A drag-and-drop task management application built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Create Tasks**: Add tasks with custom tags (HTML, CSS, JavaScript, React)
+- **Drag & Drop**: Move tasks between Todo, Doing, and Completed columns
+- **Status Management**: Organize tasks by their current status
+- **Local Storage**: Tasks persist between browser sessions
+- **Delete Tasks**: Remove completed or unwanted tasks
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- CSS3
+- Local Storage API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd TaskTrek
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Usage
+
+1. **Add a Task**: Enter task description, select tags, choose status, and click "Add Task"
+2. **Move Tasks**: Drag tasks between columns to change their status
+3. **Delete Tasks**: Click the delete icon on any task card
+4. **Tags**: Use color-coded tags to categorize your tasks
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── TaskForm.jsx      # Task creation form
+│   ├── TaskColumn.jsx    # Column container for tasks
+│   ├── TaskCard.jsx      # Individual task display
+│   ├── Tag.jsx           # Tag component
+│   └── DropArea.jsx      # Drag & drop zones
+├── assets/               # Images and icons
+└── App.jsx              # Main application component
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
